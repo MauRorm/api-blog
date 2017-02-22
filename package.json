@@ -1,0 +1,19 @@
+{
+  "name": "api-blog",
+  "version": "1.0.0",
+  "description": "Stack completo para visualización de un blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MauRorm/api-blog.git"
+  },
+  "author": "Mauricio Romero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MauRorm/api-blog/issues"
+  },
+  "homepage": "https://github.com/MauRorm/api-blog#readme"
+}
