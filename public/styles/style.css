@@ -1,0 +1,49 @@
+/*
+----------------------------------------------
+Usado en customHeader
+----------------------------------------------
+*/
+.headerText{
+	text-align: center;
+	border-radius: 25px;
+	margin-right: 1%;
+	margin-left: 1%;
+	background-color: #2196F3;
+}
+/*
+----------------------------------------------
+Usado en customDiv
+----------------------------------------------
+*/
+.reportData{
+	border-radius: 25px;
+	margin-right: 1%;
+	margin-left: 1%;
+	margin-top: 2%;
+	background-color: #BBDEFB;
+}
+/*
+----------------------------------------------
+Usado en ...
+----------------------------------------------
+*/
+.post-container{
+	width: 60%;
+	margin: 0px auto 10px;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+}
+
+.image_description {
+	margin-top: 10px;
+	margin: 0px auto 0px;
+	width: 100px;
+	height: 100px;
+	background-image: url("http://www.visitmexico.com/work/models/PueblosMagicos30/WebPage/QROO_ip_Bacalar/photoEscudo_QROO_ip_Bacalar_SBACALAR_InfoPractica_HEADER_950x434.jpg");
+	background-repeat: no-repeat;
+	background-size: cover; /*cover auto ajusta el tamaño de la imagen al contenedor*/
+}
+
+.row-data{
+	text-align: center;
+}

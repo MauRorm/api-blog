@@ -16,9 +16,9 @@ routes = (app) ->
 		};
 		dbCommand = new DbData;
 		dbCommand.setData(db, collection, data).then (response) ->
-			res.send {success:true,content:response};
+			res.json {success:true,content:response};
 		.catch (error) ->
-			res.send {success:false, content:'Set data error'};
+			res.json {success:false, content:'Set data error'};
 	);
 
 	app.put('/updatePost', (req, res) =>
@@ -30,14 +30,14 @@ routes = (app) ->
 		criteria = {id:2};
 		dbCommand = new DbData;
 		dbCommand.updateData(db, collection, data, criteria).then (response) ->
-			res.send {success:true,content:response};
+			res.json {success:true,content:response};
 		.catch (error) ->
-			res.send {success:false, content:'Set data error'};
+			res.json {success:false, content:'Set data error'};
 	);
 
 	app.delete('/deletePost', (req, res) =>
 		postId = if req.body then req.body.id else 1;
-		res.send 'borrar... ';
+		res.json 'borrar... ';
 	);
 
 	app.get('/getPost', (req, res) =>
@@ -46,9 +46,13 @@ routes = (app) ->
 		collection = 'blogs';
 		dbCommand = new DbData;
 		dbCommand.getData(db, collection).then (response) ->
-			res.send {success:true, content:response};
+			res.json {success:true, content:response};
 		.catch (error) ->
-			res.send {success:false, content:error};
+			res.json {success:false, content:error};
+	);
+
+	app.get('/', (req, res) =>
+		res.render 'index.html';
 	);
 
 
